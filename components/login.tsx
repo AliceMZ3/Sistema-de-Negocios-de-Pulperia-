@@ -76,14 +76,10 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         </form>
 
         <div className="mt-6 pt-6 border-t border-border">
-          <p className="text-xs text-muted-foreground text-center mb-3">Demo: Usa estas credenciales</p>
+
           <div className="space-y-2 text-xs">
-            <p>
-              <span className="font-semibold">Admin:</span> admin@pulperia.com / 123
-            </p>
-            <p>
-              <span className="font-semibold">Vendedor:</span> vendedor@pulperia.com / 123
-            </p>
+
+
           </div>
         </div>
       </Card>
