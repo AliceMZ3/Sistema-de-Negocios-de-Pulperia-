@@ -38,7 +38,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       <div className="p-10 text-center">
         {/* Replace the image URL below with your own */}
         <img
-          src="YOUR_IMAGE_LINK_HERE"
+          src="https://i.ibb.co/nqjVK1FV/831cf6db-4fee-46d8-8587-bf372aabf316.png"
           alt="Pawk"
           className="w-56 h-56 object-cover rounded-3xl mx-auto shadow-xl border-4 border-white/20"
         />
