@@ -33,56 +33,34 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center p-4">
-      <Card className="w-full max-w-md p-8 shadow-lg">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-primary mb-2">🏪 Pulpería</h1>
-          <p className="text-muted-foreground">Sistema de Gestión</p>
+  <div className="min-h-screen bg-gradient-to-br from-purple-950 via-purple-800 to-fuchsia-700 flex items-center justify-center p-6">
+    <Card className="w-full max-w-2xl overflow-hidden border-0 bg-white/10 backdrop-blur-xl shadow-2xl">
+      <div className="p-10 text-center">
+        {/* Replace the image URL below with your own */}
+        <img
+          src="https://i.ibb.co/nqjVK1FV/831cf6db-4fee-46d8-8587-bf372aabf316.png"
+          alt="Pawk"
+          className="w-56 h-56 object-cover rounded-3xl mx-auto shadow-xl border-4 border-white/20"
+        />
+
+        <div className="mt-8 space-y-4">
+          <h1 className="text-5xl font-extrabold bg-gradient-to-r from-purple-200 via-pink-200 to-white bg-clip-text text-transparent">
+            I love you so much pawk 💜
+          </h1>
+
+          <p className="text-purple-100 text-lg max-w-lg mx-auto leading-relaxed">
+            Every moment with you makes everything brighter, happier, and more
+            beautiful.
+          </p>
         </div>
 
-        <form onSubmit={handleLogin} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium mb-1">Usuario o Correo</label>
-            <input
-              type="text"
-              value={usuario}
-              onChange={(e) => setUsuario(e.target.value)}
-              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-              placeholder="admin@pulperia.com"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-1">Contraseña</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50"
-              placeholder="••••••••"
-            />
-          </div>
-
-          {error && (
-            <div className="flex gap-2 p-3 bg-destructive/10 border border-destructive/30 rounded-lg text-destructive text-sm">
-              <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
-              <p>{error}</p>
-            </div>
-          )}
-
-          <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-            Iniciar sesión
-          </Button>
-        </form>
-
-        <div className="mt-6 pt-6 border-t border-border">
-
-          <div className="space-y-2 text-xs">
-
-
+        <div className="mt-10">
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-6 py-3 text-purple-100 backdrop-blur-md">
+            ✨ Forever and always ✨
           </div>
         </div>
-      </Card>
-    </div>
-  )
+      </div>
+    </Card>
+  </div>
+)
 }
